@@ -21,6 +21,10 @@ To run unit tests alone you can execute the following.
 
 <br /><br />
 
+## Current Task
+1. Working on deployment of the code
+2. Change the UI
+
 ## Model
 
 The `model` package contains all the Java classes that represent entities in our database. Each class corresponds to a table in the database and includes fields that map to the columns within the table.
