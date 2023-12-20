@@ -1,4 +1,4 @@
-#Parking-Management-System
+#parking-System
 
 ## Getting Started
 
@@ -13,7 +13,7 @@ tests, and build the jar in the ./target directory.
 
 You can then run the jar via the following command.
 
-`java -jar target/Parking-Management-System-1.0-SNAPSHOT-jar-with-dependencies.jar`
+`java -jar target/parking-System-1.0-SNAPSHOT-jar-with-dependencies.jar`
 
 To run unit tests alone you can execute the following.
 
@@ -27,7 +27,7 @@ To run unit tests alone you can execute the following.
 
 ## Model
 
-The `model` package contains all the Java classes that represent entities in our database. Each class corresponds to a table in the database and includes fields that map to the columns within the table.
+The `org.parking.model` package contains all the Java classes that represent entities in our database. Each class corresponds to a table in the database and includes fields that map to the columns within the table.
 
 ### Citation
 The `Citation` class models the details of a parking citation. It stores information about the citation number, the associated vehicle, the parking lot name where the citation was issued, the category of the violation, the fee charged, payment status, and the date and time when the citation was issued.
@@ -51,11 +51,11 @@ The `Driver` class encapsulates the information of an individual in our database
 - `String status`: The current status of the driver, only 'E', 'S', 'V' are allowed.
 
 ### Vehicle
-The `Vehicle` class represents a vehicle's attributes in the system. It holds information regarding the vehicle's license number, model, color, manufacturer, and year of manufacture.
+The `Vehicle` class represents a vehicle's attributes in the system. It holds information regarding the vehicle's license number, org.parking.model, color, manufacturer, and year of manufacture.
 
 #### Attributes
 - `String license`: The vehicle's license plate number, acting as a unique identifier.
-- `String model`: The model of the vehicle.
+- `String org.parking.model`: The org.parking.model of the vehicle.
 - `String color`: The color of the vehicle.
 - `String manufacturer`: The manufacturer of the vehicle.
 - `int year`: The year the vehicle was manufactured.
@@ -102,7 +102,7 @@ The `Permit` class represents a parking permit within the system. It includes in
 
 ## Service
 
-The implementation of Service classes follows the pattern of defining an `interface` and its concrete implementations. This approach decouples the service's contract from its implementation, allowing for greater flexibility and ease of testing. 
+The implementation of Service classes follows the pattern of defining an `interface` and its concrete implementations. This approach decouples the org.parking.service's contract from its implementation, allowing for greater flexibility and ease of testing. 
 
 ## DBService Interface
 
@@ -229,7 +229,7 @@ The `PermitsService` offers methods for retrieving, entering, updating, and dele
 ## Menus 
 
 ### Menu Class Design
-The menu classes in this application adopt the same design pattern as the service classes, defining interfaces and their specific implementations. This strategy separates the operational interfaces from their execution, increasing the system's flexibility and facilitating easier testing.
+The menu classes in this application adopt the same design pattern as the org.parking.service classes, defining interfaces and their specific implementations. This strategy separates the operational interfaces from their execution, increasing the system's flexibility and facilitating easier testing.
 
 ### User Interface & Home Page
 Upon starting the application, users are greeted with a main menu offering several options:
